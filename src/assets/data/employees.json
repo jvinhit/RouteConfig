@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Vinh", "age": 28 },
+    { "id": 2, "name": "Tuyen", "age": 28 },
+    { "id": 3, "name": "Thao", "age": 29 },
+    { "id": 4, "name": "Quyen", "age": 30 },
+    { "id": 5, "name": "Phung", "age": 29 },
+    { "id": 6, "name": "Thu", "age": 25 }
+]

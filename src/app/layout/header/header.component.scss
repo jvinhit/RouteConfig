@@ -1,0 +1,185 @@
+#layout-topbar {
+    background-color: #20272a;
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    height: 70px;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9997;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+
+    .menu-button {
+        display: none;
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 58px;
+        text-align: center;
+        transition: background-color .2s;
+
+        &:hover {
+            background-color: #4a4f52;
+        }
+
+        i {
+            line-height: inherit;
+        }
+    }
+
+    .logo {
+        margin-left: 45px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+    img {
+        height: 42px;
+    }
+}
+
+.topbar-menu {
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    margin: 0 60px 0 0;
+    padding: 0;
+    height: 100%;
+}
+
+.topbar-menu > li {
+    display: inline-block;
+    height: 100%;
+
+    &.active {
+        background-color: gray;
+    }
+}
+
+.topbar-menu > li > a {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .2s;
+    min-width: 120px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 70px;
+    font-size: 16px;
+}
+
+.topbar-menu > li > a:hover {
+    background-color: #4a4f52;
+}
+
+.topbar-menu > li > ul {
+    display: none;
+}
+
+.topbar-menu > li.topbar-menu-themes {
+    position: relative;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul {
+    position: absolute;
+    top: 65px;
+    left: -50px;
+    width: 250px;
+    max-height: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    list-style-type: none;
+    padding: 15px 0;
+    margin: 0;
+    border-radius: 3px;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: .5s;
+    animation-duration: 0.5s;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul > li.topbar-submenu-header {
+    padding: 6px 12px;
+    font-weight: 700;
+    text-align: left;
+    background-image: linear-gradient(to left, #2bc0ec, #1b81d7);
+    color: #fff;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul a {
+    text-decoration: none;
+    color: #404c51;
+    padding: 6px 12px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul a:hover {
+    background-color: #eee;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul a img {
+    width: 32px;
+    vertical-align: middle;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul a .topbar-submenu-icon {
+    font-size: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.topbar-menu > li.topbar-menu-themes > ul a .ui-text {
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.topbar-menu > li.topbar-menu-themes:hover > ul {
+    display: block;
+}
+
+@media screen and (max-width: 64em) {
+    #layout-topbar {
+        text-align: center;
+
+        .menu-button {
+            display: inline-block;
+        }
+
+        .logo {
+            margin: 7px 0;
+        }
+    }
+
+    .topbar-menu {
+        background-color: #363c3f;
+        float: none;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+        text-align: center;
+
+        & > li {
+            & > a {
+                padding-bottom: 0;
+                line-height: 40px;
+                min-width: 100px;
+            }
+
+            &.topbar-menu-themes > ul {
+                top: 40px;
+                text-align: left;
+            }
+        }
+    }
+}

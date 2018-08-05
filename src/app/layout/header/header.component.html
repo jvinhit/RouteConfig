@@ -1,0 +1,46 @@
+<div id="layout-topbar">
+    <a href="#" class="menu-button" (click)="onMenuButtonClick($event)">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a href="#" class="logo" [routerLink]="['/']">
+        <img alt="logo" src="https://www.primefaces.org/primeng/assets/showcase/images/logo.png" />
+    </a>
+    <ul class="topbar-menu">
+        <li [routerLinkActive]="['active']">
+            <a href="#" [routerLink]="['/home']">Home</a>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="['/employees']">
+                Employees
+            </a>
+        </li>
+        <li class="topbar-menu-themes" [routerLinkActive]="['active']">
+            <a href="#">THEMES</a>
+            <ul>
+                <li class="topbar-submenu-header">THEMING</li>
+                <li>
+                    <a [routerLink]="['./theming']">
+                        Guide
+                    </a>
+                </li>
+
+                <li>
+                    <a href=" https://www.primefaces.org/designer/primeng ">
+                        <span class="topbar-submenu-icon fa fa-paint-brush "></span>Designer
+                        <span class="menuitem-badge ">NEW</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="[ './icons'] ">
+                        <span class="topbar-submenu-icon fa fa-info-circle "></span>Icons
+                        <span class="menuitem-badge ">NEW</span>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <li [routerLinkActive]="['active']">
+            <a [routerLink]="[ '/search'] ">Search App</a>
+        </li>
+    </ul>
+</div>

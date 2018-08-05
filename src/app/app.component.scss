@@ -1,0 +1,15 @@
+#layout-content {
+    padding-top: 70px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1170px;
+}
+
+@media screen and (max-width: 64em) {
+    #layout-content {
+        padding-top: 100px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+}

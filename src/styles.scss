@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+////////////////////// End
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Open Sans","Helvetica Neue",sans-serif;
+    font-weight: 400;
+    color: #333c40;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+.clearfix {
+    zoom: 1;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+$height_footer: 60px;
+$color-antiwhite: #edf2f4;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin-bottom: $height_footer;
+
+    .footer {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        line-height: $height_footer;
+        background-color: #20272a;
+        color: $color-antiwhite;
+        text-align: center;
+
+        .footer-block {
+            margin-bottom: 0;
+        }
+    }
+}

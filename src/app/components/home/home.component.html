@@ -1,0 +1,10 @@
+<p-dropdown [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" optionLabel="name" [showClear]="true">
+</p-dropdown>
+<p>Selected City: {{selectedCity ? selectedCity.name : 'none'}}</p>
+<p-confirmDialog></p-confirmDialog>
+
+<button type="button" (click)="confirm1()" pButton icon="pi pi-check" label="Confirm"></button>
+
+<button type="button" (click)="confirm2()" pButton icon="pi pi-times" label="Delete"></button>
+
+<p-messages [value]="msgs"></p-messages>

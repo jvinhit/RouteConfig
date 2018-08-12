@@ -45,3 +45,4 @@ import { EmployeeService } from './services/employee.service';
     bootstrap: [AppComponent]
 })
 export class AppModule {}
+const ss = () => 5;

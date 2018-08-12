@@ -1,7 +1,7 @@
 {
     "rulesDirectory": ["node_modules/codelyzer"],
     "rules": {
-        "arrow-return-shorthand": true,
+        "arrow-return-shorthand": false,
         "callable-types": true,
         "class-name": true,
         "forin": true,
@@ -42,6 +42,7 @@
         "radix": true,
         "triple-equals": [true, "allow-null-check"],
         "typeof-compare": true,
+        "eofline": true,
         "unified-signatures": true,
         "variable-name": false,
         "directive-selector": [true, "attribute", "app", "camelCase"],
